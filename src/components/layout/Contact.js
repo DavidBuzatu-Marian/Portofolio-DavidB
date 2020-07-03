@@ -1,8 +1,9 @@
-import React, { useState, Fragment } from 'react';
+import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import { ReactComponent as ContactSVG } from '../../img/contact.svg';
 import ExternalLinks from '../utils/ExternalLinks';
 import PulseLoader from 'react-spinners/PulseLoader';
+import { Element } from 'react-scroll';
 
 const TEMPLATE_ID = 'template_mg10MiTz';
 const SERVICE_ID = 'gmail';
@@ -46,7 +47,7 @@ const Contact = () => {
   };
 
   return (
-    <Fragment>
+    <Element id='contact' name='contact'>
       <div className='container'>
         <h1 className='regular'>Let's build a solution together</h1>
         <div className='row'>
@@ -102,7 +103,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </Fragment>
+    </Element>
   );
 };
 

@@ -47,3 +47,27 @@
     margin-bottom: $margin-16;
   }
 }
+
+.navbar {
+  margin: 0 10rem;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  background-color: $background-color;
+  width: 100%;
+  height: auto;
+
+  li {
+    margin-right: $margin-40;
+    font-size: $font-size-h6;
+    cursor: pointer;
+    &:hover {
+      color: $primary-color-light;
+    }
+  }
+
+  .active {
+    color: $primary-color;
+    border-bottom: 4px solid $primary-color;
+  }
+}
