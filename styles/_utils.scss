@@ -37,3 +37,13 @@
     color: $color-black;
   }
 }
+
+.centered-container {
+  align-items: center;
+  text-align: center;
+
+  &.fixed-width {
+    width: 30rem;
+    margin-bottom: $margin-16;
+  }
+}

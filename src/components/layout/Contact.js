@@ -2,6 +2,7 @@ import React, { useState, Fragment } from 'react';
 import emailjs from 'emailjs-com';
 import { ReactComponent as ContactSVG } from '../../img/contact.svg';
 import ExternalLinks from '../utils/ExternalLinks';
+import PulseLoader from 'react-spinners/PulseLoader';
 
 const TEMPLATE_ID = 'template_mg10MiTz';
 const SERVICE_ID = 'gmail';
@@ -12,9 +13,10 @@ const Contact = () => {
     from_name: '',
     reply_to: '',
     message: '',
+    loading: false,
   });
 
-  const { from_name, reply_to, message } = formData;
+  const { from_name, reply_to, message, loading } = formData;
 
   const onChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -23,6 +25,7 @@ const Contact = () => {
   const onSubmit = async (e) => {
     e.preventDefault();
     if (validFields(from_name, reply_to)) {
+      setFormData({ ...formData, loading: true });
       sendEmail(SERVICE_ID, TEMPLATE_ID, e, USER_ID);
     }
   };
@@ -36,7 +39,7 @@ const Contact = () => {
   const sendEmail = async (serviceID, templateID, e, userID) => {
     try {
       await emailjs.sendForm(serviceID, templateID, e.target, userID);
-      setFormData({ from_name: '', reply_to: '', message: '' });
+      setFormData({ from_name: '', reply_to: '', message: '', loading: false });
     } catch (error) {
       console.error(error);
     }
@@ -81,8 +84,15 @@ const Contact = () => {
                   onChange={(e) => onChange(e)}
                 />
               </div>
-              <input type='submit' value='Send' />
+              <input
+                type='submit'
+                value='Send'
+                disabled={loading ? true : false}
+              />
             </form>
+            <div className='centered-container fixed-width'>
+              <PulseLoader color={'#7bacac'} loading={loading} />
+            </div>
             <h6>Phone number (Romanian code)</h6>
             <h6 className='bold'>+04 726 654 132</h6>
             <ExternalLinks />
