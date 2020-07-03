@@ -1,7 +1,8 @@
 import React, { useState, Fragment } from 'react';
 import emailjs from 'emailjs-com';
-import { Link } from 'react-router-dom';
 import { ReactComponent as ContactSVG } from '../../img/contact.svg';
+import ExternalLinks from '../utils/ExternalLinks';
+import PulseLoader from 'react-spinners/PulseLoader';
 
 const TEMPLATE_ID = 'template_mg10MiTz';
 const SERVICE_ID = 'gmail';
@@ -12,9 +13,10 @@ const Contact = () => {
     from_name: '',
     reply_to: '',
     message: '',
+    loading: false,
   });
 
-  const { from_name, reply_to, message } = formData;
+  const { from_name, reply_to, message, loading } = formData;
 
   const onChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -22,18 +24,22 @@ const Contact = () => {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    sendEmail(SERVICE_ID, TEMPLATE_ID, e, USER_ID);
+    if (validFields(from_name, reply_to)) {
+      setFormData({ ...formData, loading: true });
+      sendEmail(SERVICE_ID, TEMPLATE_ID, e, USER_ID);
+    }
+  };
+
+  const validFields = (name, email) => {
+    const patternName = /^([^0-9]*)$/;
+    const patternEmail = /\S+@\S+\.\S+/;
+    return patternName.test(name) && patternEmail.test(email);
   };
 
   const sendEmail = async (serviceID, templateID, e, userID) => {
     try {
-      const result = await emailjs.sendForm(
-        serviceID,
-        templateID,
-        e.target,
-        userID
-      );
-      console.log(result);
+      await emailjs.sendForm(serviceID, templateID, e.target, userID);
+      setFormData({ from_name: '', reply_to: '', message: '', loading: false });
     } catch (error) {
       console.error(error);
     }
@@ -53,6 +59,7 @@ const Contact = () => {
                   id='from_name'
                   type='name'
                   value={from_name}
+                  required
                   onChange={(e) => onChange(e)}
                 />
               </div>
@@ -63,6 +70,7 @@ const Contact = () => {
                   id='reply_to'
                   type='email'
                   value={reply_to}
+                  required
                   onChange={(e) => onChange(e)}
                 />
               </div>
@@ -76,27 +84,18 @@ const Contact = () => {
                   onChange={(e) => onChange(e)}
                 />
               </div>
-              <input type='submit' value='Send' />
+              <input
+                type='submit'
+                value='Send'
+                disabled={loading ? true : false}
+              />
             </form>
+            <div className='centered-container fixed-width'>
+              <PulseLoader color={'#7bacac'} loading={loading} />
+            </div>
             <h6>Phone number (Romanian code)</h6>
             <h6 className='bold'>+04 726 654 132</h6>
-            <div className='external-contact'>
-              <Link
-                to={{ pathname: 'https://github.com/DavidBuzatu-Marian' }}
-                target='_blank'
-              >
-                <i className='fab fa-github'></i>
-              </Link>
-              <Link
-                to={{
-                  pathname:
-                    'https://www.linkedin.com/in/david-buzatu-160620198/',
-                }}
-                target='_blank'
-              >
-                <i className='fab fa-linkedin-in'></i>
-              </Link>
-            </div>
+            <ExternalLinks />
           </div>
           <div className='col'>
             <ContactSVG height='512px' width='637.19' />
