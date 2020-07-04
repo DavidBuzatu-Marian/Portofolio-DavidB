@@ -8,7 +8,7 @@ const Landing = () => {
     <Fragment>
       <Navbar></Navbar>
       <Presentation></Presentation>
-      {/* <Contact></Contact> */}
+      <Contact></Contact>
     </Fragment>
   );
 };

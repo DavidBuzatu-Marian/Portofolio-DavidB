@@ -1,11 +1,15 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import DotsPNG from '../../img/dots.png';
 import PortraitIMG from '../../img/portrait.png';
 import ExternalLinks from '../utils/ExternalLinks';
+import { Element } from 'react-scroll';
+import Scroll from 'react-scroll';
+
+const ScrollLink = Scroll.Link;
 
 const Presentation = () => {
   return (
-    <Fragment>
+    <Element id='portofolio' name='portofolio'>
       <img
         src={PortraitIMG}
         alt='portrait'
@@ -18,14 +22,22 @@ const Presentation = () => {
           <h1 className='extra-bold'>I craft ideas into real software</h1>
           <div className='contact-btn-container mt-144'>
             <button className='btn btn-round'>
-              <i className='fas fa-chevron-right'></i>
+              <ScrollLink
+                to='contact'
+                spy={true}
+                smooth={true}
+                duration={500}
+                activeClass='active'
+              >
+                <i className='fas fa-chevron-right'></i>
+              </ScrollLink>
             </button>
             <p className='contact-p'>Let's invision together</p>
           </div>
           <ExternalLinks />
         </div>
       </div>
-    </Fragment>
+    </Element>
   );
 };
 
