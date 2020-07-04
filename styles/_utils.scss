@@ -107,3 +107,38 @@
     border-bottom: 4px solid $primary-color;
   }
 }
+
+.contact-btn-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+
+  .contact-p {
+    font-size: $font-size-h2;
+    color: $color-black;
+    font-weight: 300;
+    margin-left: 2rem;
+  }
+}
+
+.btn {
+  display: inline-block;
+  color: $text-color-white;
+  cursor: pointer;
+  font-size: $font-size-h6;
+  text-align: center;
+  border: none;
+  background-color: $primary-color;
+
+  &.btn-round {
+    border-radius: 10rem;
+    height: 6rem;
+    width: 6rem;
+  }
+
+  i {
+    font-size: $font-size-icons;
+    color: $color-black;
+  }
+}

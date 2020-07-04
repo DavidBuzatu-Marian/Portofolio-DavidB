@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import DotsPNG from '../../img/dots.png';
 import PortraitIMG from '../../img/portrait.png';
+import ExternalLinks from '../utils/ExternalLinks';
 
 const Presentation = () => {
   return (
@@ -15,6 +16,13 @@ const Presentation = () => {
         <div className='container-title'>
           <h1 className='light'>Hello, I'm David</h1>
           <h1 className='extra-bold'>I craft ideas into real software</h1>
+          <div className='contact-btn-container mt-144'>
+            <button className='btn btn-round'>
+              <i className='fas fa-chevron-right'></i>
+            </button>
+            <p className='contact-p'>Let's invision together</p>
+          </div>
+          <ExternalLinks />
         </div>
       </div>
     </Fragment>
