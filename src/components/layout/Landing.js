@@ -8,9 +8,9 @@ const Landing = () => {
   return (
     <Fragment>
       <Navbar></Navbar>
-      {/* <Presentation></Presentation> */}
+      <Presentation></Presentation>
       <Projects></Projects>
-      {/* <Contact></Contact> */}
+      <Contact></Contact>
     </Fragment>
   );
 };

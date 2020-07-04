@@ -9,6 +9,10 @@
   margin: $margin-72 auto !important;
 }
 
+.margin-144-auto {
+  margin: $margin-144 auto !important;
+}
+
 .mx-auto {
   margin-left: auto !important;
   margin-right: auto !important;
@@ -167,11 +171,28 @@
 }
 
 .container-projects {
-  margin: $margin-72 $margin-72 0 $margin-72;
+  margin: $margin-144 $margin-72 0 $margin-72;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  overflow: hidden;
 
+  a {
+    overflow: hidden;
+  }
   .project-img {
     height: 25rem;
+    border-radius: 0.5rem;
+    margin: 2rem;
+    cursor: pointer;
+    overflow: hidden;
+
+    &:hover {
+      box-shadow: 0 14px 18px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+  }
+
+  .project-img:last-child {
+    margin-bottom: 2rem;
   }
 }

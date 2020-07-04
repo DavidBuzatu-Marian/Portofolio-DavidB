@@ -8,20 +8,29 @@ import ProjectIMG from '../utils/ProjectIMG';
 
 const Projects = () => {
   const projectsIMG = [Project1, Project2, Project3];
+  const projectsURL = [
+    'https://github.com/DavidBuzatu-Marian/Schedly',
+    'https://github.com/DavidBuzatu-Marian/BenchMe',
+    'https://github.com/DavidBuzatu-Marian/Bookster',
+  ];
 
   return (
     <Fragment>
       <img
         src={EllipseOrange}
         alt='ellipse'
-        className='pos-absolute mt-72 ellipse-projects-img'
+        className='pos-absolute mt-144 ellipse-projects-img'
       />
-      <div className='margin-72-auto text-center'>
+      <div className='margin-144-auto text-center'>
         <h1>My personal projects</h1>
       </div>
       <div className='container-projects'>
-        {projectsIMG.map((projectIMG) => (
-          <ProjectIMG image={projectIMG} />
+        {projectsIMG.map((projectIMG, idx) => (
+          <ProjectIMG
+            key={idx}
+            image={projectIMG}
+            projectURL={projectsURL[idx]}
+          />
         ))}
       </div>
       <img
