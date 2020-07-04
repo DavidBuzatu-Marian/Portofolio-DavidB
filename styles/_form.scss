@@ -1,7 +1,6 @@
-@import './colors';
-@import './utils';
-@import './margins';
-@import './font-size';
+@import '../styles/margins';
+@import '../styles/font-size';
+@import '../styles/colors';
 
 form {
   display: flex;
