@@ -90,6 +90,10 @@ h1 {
 h2 {
   font-size: $font-size-h2;
   color: $color-black;
+
+  &.title {
+    font-size: $font-size-title;
+  }
 }
 h3 {
   font-size: $font-size-h3;
@@ -104,10 +108,19 @@ h6 {
   &.bold {
     font-weight: bold;
   }
+
+  &.regular {
+    font-weight: 400;
+  }
 }
 
 p {
   font-size: $font-size-paragraph;
   color: $color-black;
   font-weight: 300;
+
+  &.thin {
+    font-weight: 100;
+    font-size: $font-size-h6;
+  }
 }

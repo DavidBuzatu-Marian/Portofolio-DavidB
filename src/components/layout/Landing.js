@@ -3,6 +3,7 @@ import Contact from './Contact';
 import Navbar from '../navbar/Navbar';
 import Presentation from './Presentation';
 import Projects from './Projects';
+import Services from './Services';
 
 const Landing = () => {
   return (
@@ -10,6 +11,7 @@ const Landing = () => {
       <Navbar></Navbar>
       <Presentation></Presentation>
       <Projects></Projects>
+      <Services></Services>
       <Contact></Contact>
     </Fragment>
   );
