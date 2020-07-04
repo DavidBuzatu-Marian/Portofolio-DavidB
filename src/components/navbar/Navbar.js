@@ -5,8 +5,8 @@ const ScrollLink = Scroll.Link;
 
 const Navbar = () => {
   return (
-    <div className='container margin-0-auto'>
-      <ul className='navbar'>
+    <div className='navbar'>
+      <ul className='navbar ml-144'>
         <li>
           <ScrollLink
             to='portofolio'
