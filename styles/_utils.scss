@@ -26,6 +26,10 @@
   margin-top: $margin-72 !important;
 }
 
+.mt-32 {
+  margin-top: $margin-32 !important;
+}
+
 .ml-144 {
   margin-left: $margin-144 !important;
 }
@@ -195,4 +199,18 @@
   .project-img:last-child {
     margin-bottom: 2rem;
   }
+}
+
+.dots-services-right {
+  overflow: hidden;
+  left: 0;
+  width: 25.5rem;
+  margin-left: -12.75rem;
+}
+
+.dots-services-left {
+  overflow: hidden;
+  right: 0;
+  width: 25.5rem;
+  margin-right: -12.75rem;
 }
