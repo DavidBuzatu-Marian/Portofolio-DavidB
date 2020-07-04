@@ -18,6 +18,14 @@
   margin-top: $margin-144 !important;
 }
 
+.mt-72 {
+  margin-top: $margin-72 !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
 .pos-absolute {
   position: absolute;
 }
@@ -48,6 +56,17 @@
 .container-title {
   width: 37.5rem;
   margin-top: 16rem;
+}
+
+.ellipse-projects-img {
+  left: 0;
+  margin-left: $margin-72;
+}
+
+.ellipse-group-projects-img {
+  right: 0;
+  margin-right: $margin-72;
+  align-self: baseline;
 }
 
 .portrait-img {
@@ -140,5 +159,15 @@
   i {
     font-size: $font-size-icons;
     color: $color-black;
+  }
+}
+
+.container-projects {
+  margin: $margin-72 $margin-72 0 $margin-72;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .project-img {
+    height: 25rem;
   }
 }

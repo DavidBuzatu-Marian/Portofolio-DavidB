@@ -68,17 +68,15 @@ ul {
 
 h1 {
   font-size: $font-size-h1;
-  font-weight: bold;
-  color: $primary-color-light;
+  font-weight: 700;
+  color: $header-color;
 
   &.regular {
     font-weight: normal;
-    color: $header-color;
   }
 
   &.light {
     font-weight: 300;
-    color: $header-color;
   }
 
   &.extra-bold {
