@@ -6,9 +6,10 @@
 
 /* reset defaults */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  overflow: auto;
 }
 html,
 body {
@@ -21,7 +22,6 @@ body {
   background-color: $background-color;
   // background-color: #f9f9f9;
   color: #333;
-  overflow: auto;
 }
 button {
   outline: none !important;

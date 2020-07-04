@@ -2,10 +2,17 @@
 @import './colors';
 @import './font-size';
 
+.margin-0-auto {
+  margin: 0 auto !important;
+}
+
+.margin-72-auto {
+  margin: $margin-72 auto !important;
+}
+
 .container {
   display: flex;
   flex-direction: column;
-  margin: $margin-72 auto;
   width: 1500px;
   align-items: flex-start;
 
@@ -49,18 +56,22 @@
 }
 
 .navbar {
-  margin: 0 10rem;
   display: flex;
   flex-direction: row;
   position: fixed;
   background-color: $background-color;
   width: 100%;
-  height: auto;
+  align-items: center;
+  text-align: center;
+  height: 5rem;
+  padding: 1.5rem 0;
 
   li {
     margin-right: $margin-40;
     font-size: $font-size-h6;
+    overflow: hidden;
     cursor: pointer;
+    height: 100%;
     &:hover {
       color: $primary-color-light;
     }
