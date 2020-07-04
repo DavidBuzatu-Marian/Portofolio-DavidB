@@ -6,9 +6,10 @@
 
 /* reset defaults */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  overflow: auto;
 }
 html,
 body {
@@ -17,13 +18,10 @@ body {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.8rem;
-  line-height: 1.6;
   //background-image: linear-gradient(135deg, $primary-color, #f9f9f9 60%);
   background-color: $background-color;
   // background-color: #f9f9f9;
   color: #333;
-  overflow: auto;
 }
 button {
   outline: none !important;
