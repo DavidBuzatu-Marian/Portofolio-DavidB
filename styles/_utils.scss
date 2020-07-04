@@ -1,6 +1,5 @@
-@import './margins';
-@import './colors';
-@import './font-size';
+@import '../styles/margins';
+@import '../styles/font-size';
 
 .margin-0-auto {
   margin: 0 auto !important;
@@ -8,6 +7,19 @@
 
 .margin-72-auto {
   margin: $margin-72 auto !important;
+}
+
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.mt-144 {
+  margin-top: $margin-144 !important;
+}
+
+.pos-absolute {
+  position: absolute;
 }
 
 .container {
@@ -31,6 +43,18 @@
       flex: 1;
     }
   }
+}
+
+.container-title {
+  width: 37.5rem;
+  margin-top: 16rem;
+}
+
+.portrait-img {
+  right: 0;
+  margin-right: -5rem;
+  max-height: 58rem;
+  object-fit: contain;
 }
 
 .external-contact {
@@ -65,6 +89,7 @@
   text-align: center;
   height: 5rem;
   padding: 1.5rem 0;
+  z-index: 999;
 
   li {
     margin-right: $margin-40;

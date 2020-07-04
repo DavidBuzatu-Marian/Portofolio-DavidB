@@ -1,12 +1,14 @@
 import React, { Fragment } from 'react';
 import Contact from './Contact';
 import Navbar from '../navbar/Navbar';
+import Presentation from './Presentation';
 
 const Landing = () => {
   return (
     <Fragment>
       <Navbar></Navbar>
-      <Contact></Contact>
+      <Presentation></Presentation>
+      {/* <Contact></Contact> */}
     </Fragment>
   );
 };
