@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import ServiceHolder from '../service/ServiceHolder';
 import { Element } from 'react-scroll';
 
