@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import EllipseOrange from '../../img/EllipseOrange.png';
 import GroupEllipse from '../../img/GroupEllipse.png';
 import Project1 from '../../img/project-1.png';

@@ -34,6 +34,10 @@
   margin-left: $margin-144 !important;
 }
 
+.mr-32 {
+  margin-right: $margin-32 !important;
+}
+
 .text-center {
   text-align: center !important;
 }
@@ -162,10 +166,33 @@
   border: none;
   background-color: $primary-color;
 
-  &.btn-round {
+  &.btn-circle {
     border-radius: 10rem;
     height: 6rem;
     width: 6rem;
+  }
+
+  &.btn-round-right {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 50%;
+    border-radius: 0rem 10rem 10rem 0rem;
+
+    i {
+      margin: 1rem;
+      color: $text-color-white;
+    }
+  }
+
+  &.btn-round-orange {
+    border-radius: 0.5rem;
+    background-color: $secondary-color;
+    font-size: $font-size-h6;
+    font-weight: 700;
+    width: 16rem;
+    height: 5rem;
+    cursor: default;
   }
 
   i {
@@ -213,4 +240,9 @@
   right: 0;
   width: 25.5rem;
   margin-right: -12.75rem;
+}
+
+.container-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }

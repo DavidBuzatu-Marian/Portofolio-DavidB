@@ -20,7 +20,7 @@ const Presentation = () => {
           <h1 className='light'>Hello, I'm David</h1>
           <h1 className='extra-bold'>I craft ideas into real software</h1>
           <div className='contact-btn-container mt-144'>
-            <button className='btn btn-round'>
+            <button className='btn btn-circle'>
               <ScrollLink
                 to='contact'
                 spy={true}

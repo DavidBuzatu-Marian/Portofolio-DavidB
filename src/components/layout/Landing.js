@@ -4,15 +4,17 @@ import Navbar from '../navbar/Navbar';
 import Presentation from './Presentation';
 import Projects from './Projects';
 import Services from './Services';
+import About from './About';
 
 const Landing = () => {
   return (
     <Fragment>
       <Navbar></Navbar>
-      <Presentation></Presentation>
+      <About></About>
+      {/* <Presentation></Presentation>
       <Projects></Projects>
       <Services></Services>
-      <Contact></Contact>
+      <Contact></Contact> */}
     </Fragment>
   );
 };
