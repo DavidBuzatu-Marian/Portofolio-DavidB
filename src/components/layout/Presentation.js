@@ -1,15 +1,14 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import DotsPNG from '../../img/dots.png';
 import PortraitIMG from '../../img/portrait.png';
 import ExternalLinks from '../utils/ExternalLinks';
-import { Element } from 'react-scroll';
 import Scroll from 'react-scroll';
 
 const ScrollLink = Scroll.Link;
 
 const Presentation = () => {
   return (
-    <Element id='portofolio' name='portofolio'>
+    <Fragment>
       <img
         src={PortraitIMG}
         alt='portrait'
@@ -37,7 +36,7 @@ const Presentation = () => {
           <ExternalLinks />
         </div>
       </div>
-    </Element>
+    </Fragment>
   );
 };
 

@@ -18,6 +18,17 @@ const Navbar = () => {
             Portofolio
           </ScrollLink>
         </li>
+        <li>
+          <ScrollLink
+            to='services'
+            spy={true}
+            smooth={true}
+            duration={500}
+            activeClass='active'
+          >
+            Services
+          </ScrollLink>
+        </li>
         <li>Resume</li>
         <li>
           <ScrollLink

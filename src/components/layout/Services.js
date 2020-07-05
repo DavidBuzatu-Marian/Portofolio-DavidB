@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import ServiceHolder from '../service/ServiceHolder';
+import { Element } from 'react-scroll';
 
 const Services = () => {
   const titleArr = [
@@ -39,7 +40,7 @@ const Services = () => {
   };
 
   return (
-    <Fragment>
+    <Element id='services' name='services'>
       <div className='margin-144-auto text-center'>
         <h1>Services</h1>
       </div>
@@ -52,7 +53,7 @@ const Services = () => {
           paragraphs={paragraphObj[key]}
         />
       ))}
-    </Fragment>
+    </Element>
   );
 };
 
