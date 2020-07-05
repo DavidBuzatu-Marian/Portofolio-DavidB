@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
-import ServiceHolderRight from '../service/ServiceHolderRight';
-import ServiceHolderLeft from '../service/ServiceHolderLeft';
+import ServiceHolder from '../service/ServiceHolder';
+import { Element } from 'react-scroll';
 
 const Services = () => {
   const titleArr = [
@@ -40,34 +40,20 @@ const Services = () => {
   };
 
   return (
-    <Fragment>
+    <Element id='services' name='services'>
       <div className='margin-144-auto text-center'>
         <h1>Services</h1>
       </div>
-      {Object.keys(paragraphObj).map((key, idx) => {
-        if (key % 2 === 0) {
-          return (
-            <ServiceHolderRight
-              key={idx}
-              svg={key}
-              title={titleArr[key]}
-              subtitle={subtitleArr[key]}
-              paragraphs={paragraphObj[key]}
-            />
-          );
-        } else {
-          return (
-            <ServiceHolderLeft
-              key={idx}
-              svg={key}
-              title={titleArr[key]}
-              subtitle={subtitleArr[key]}
-              paragraphs={paragraphObj[key]}
-            />
-          );
-        }
-      })}
-    </Fragment>
+      {Object.keys(paragraphObj).map((key, idx) => (
+        <ServiceHolder
+          key={idx}
+          svg={key}
+          title={titleArr[key]}
+          subtitle={subtitleArr[key]}
+          paragraphs={paragraphObj[key]}
+        />
+      ))}
+    </Element>
   );
 };
 
