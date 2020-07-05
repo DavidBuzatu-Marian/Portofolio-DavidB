@@ -11,12 +11,12 @@ const Landing = () => {
   return (
     <Fragment>
       <Navbar />
+      <Presentation />
+      <Projects />
+      <Services />
+      <About />
       <SoftwareSkills />
-      {/* <Presentation/>
-      <Projects/>
-      <Services/>
-      <About/>
-      <Contact/> */}
+      <Contact />
     </Fragment>
   );
 };

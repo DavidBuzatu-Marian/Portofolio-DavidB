@@ -95,6 +95,14 @@ h2 {
     font-size: $font-size-title;
   }
 
+  &.bold {
+    font-weight: 700;
+  }
+
+  &.header {
+    color: $header-color;
+  }
+
   &.subtitle {
     font-weight: 400;
   }

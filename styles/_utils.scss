@@ -46,6 +46,10 @@
   margin-right: $margin-32 !important;
 }
 
+.ml-16 {
+  margin-left: $margin-16 !important;
+}
+
 .text-center {
   text-align: center !important;
 }
@@ -178,6 +182,13 @@
     border-radius: 10rem;
     height: 6rem;
     width: 6rem;
+
+    &-orange {
+      border-radius: 10rem;
+      background-color: $secondary-color;
+      height: 1.75rem;
+      width: 1.75rem;
+    }
   }
 
   &.btn-round-right {
@@ -267,6 +278,27 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.container-languages {
+  display: flex;
+  flex-wrap: nowrap;
+
+  .language {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.skills-img {
+  right: 0;
+  margin-right: $margin-144;
+  margin-top: -$margin-72;
+}
+
 .overflow-visible {
   overflow: visible;
+}
+
+.w-75 {
+  width: 75% !important;
 }

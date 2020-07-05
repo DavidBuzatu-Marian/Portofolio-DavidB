@@ -1,5 +1,7 @@
 import React from 'react';
 import SkillButton from '../skills/SkillButton';
+import Asteroid from '../../img/asteroid.png';
+import LanguageItem from '../skills/LanguageItem';
 
 const SoftwareSkills = () => {
   const skillsArr = [
@@ -12,6 +14,8 @@ const SoftwareSkills = () => {
     'MongoDB',
     'Firebase',
   ];
+
+  const languageArr = ['Java', 'Javascript', 'Python', 'C/C++'];
 
   return (
     <div className='container margin-144-auto'>
@@ -26,6 +30,21 @@ const SoftwareSkills = () => {
         {skillsArr.map((skill, idx) => (
           <SkillButton key={idx} btnText={skill} />
         ))}
+      </div>
+      <div className='mt-72'>
+        <img
+          src={Asteroid}
+          alt='asteroid'
+          className='pos-absolute skills-img'
+        />
+        <h2 className='bold header w-75'>
+          Great knowledge of the following programming languages:
+        </h2>
+        <div className='container-languages mt-32'>
+          {languageArr.map((language, idx) => (
+            <LanguageItem key={idx} language={language} />
+          ))}
+        </div>
       </div>
     </div>
   );
