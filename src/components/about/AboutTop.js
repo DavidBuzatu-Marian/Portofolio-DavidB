@@ -1,5 +1,9 @@
 import React from 'react';
 import { ReactComponent as AboutSVG } from '../../img/about.svg';
+import Scroll from 'react-scroll';
+
+const ScrollLink = Scroll.Link;
+
 const AboutTop = () => {
   return (
     <div className='row'>
@@ -20,7 +24,16 @@ const AboutTop = () => {
           </h6>
         </div>
         <button className='mt-32 btn btn-round-right'>
-          <i className='fas fa-chevron-right'></i> Let's create together
+          <i className='fas fa-chevron-right'></i>{' '}
+          <ScrollLink
+            to='contact'
+            spy={true}
+            smooth={true}
+            duration={500}
+            activeClass='active'
+          >
+            Let's create together
+          </ScrollLink>
         </button>
         <h2 className='mt-32 subtitle'>
           There is no problem without solution. I will do the hard work for you.
