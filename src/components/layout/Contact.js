@@ -99,7 +99,11 @@ const Contact = () => {
             <ExternalLinks />
           </div>
           <div className='col'>
-            <ContactSVG height='512px' width='637.19' />
+            <ContactSVG
+              height='512px'
+              width='637.19'
+              className='contact-svg hide-mobile'
+            />
           </div>
         </div>
       </div>

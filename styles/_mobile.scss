@@ -6,6 +6,9 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .w-75 {
+    width: auto !important;
+  }
 
   .container {
     width: 100%;
@@ -28,7 +31,7 @@
   }
 
   .container-languages {
-    width: 64%;
+    justify-content: center;
   }
 
   .text-center-mobile {
@@ -89,5 +92,117 @@
   .deployment-svg {
     width: 25.8125rem;
     height: 18.75rem;
+  }
+
+  .btn {
+    font-size: $font-size-h6-mobile !important;
+    &.btn-round-orange {
+      overflow: hidden;
+      width: 12rem;
+      height: 4rem;
+    }
+
+    &.btn-round-green {
+      overflow: hidden;
+      width: 12rem;
+      height: 4rem;
+    }
+  }
+
+  .w-skills {
+    width: auto !important;
+  }
+
+  .skills-img {
+    margin-right: 0;
+    margin-top: 2rem;
+  }
+
+  .contact-svg {
+    width: 18.75rem;
+    height: 23.3125rem;
+  }
+}
+
+@media (max-width: 1048px) {
+  .w-75 {
+    width: auto !important;
+  }
+
+  .mt-72 {
+    margin-top: $margin-32 !important;
+  }
+
+  .mt-144 {
+    margin-top: $margin-72 !important;
+  }
+
+  .margin-144-auto {
+    margin: $margin-72 auto !important;
+  }
+
+  .container {
+    align-items: center;
+  }
+
+  .pos-relative-mobile {
+    position: relative !important;
+  }
+
+  .container-projects {
+    margin: 4.5rem auto 0 auto;
+  }
+  .portrait-img {
+    margin-right: 0;
+    max-height: 60rem;
+  }
+
+  .project-img {
+    height: 18rem !important;
+  }
+
+  .about-svg {
+    width: 18.75rem;
+    height: 15.625rem;
+  }
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: $font-size-h1-mobile !important;
+
+    &.extra-bold {
+      font-size: $font-size-title-mobile !important;
+    }
+  }
+  h2 {
+    font-size: $font-size-h2-mobile !important;
+
+    &.title {
+      font-size: $font-size-title-mobile !important;
+    }
+  }
+  h3 {
+    font-size: $font-size-h3-mobile !important;
+  }
+
+  h6 {
+    font-size: $font-size-h6-mobile !important;
+  }
+
+  p {
+    font-size: $font-size-paragraph-mobile !important;
+
+    &.thin {
+      font-size: $font-size-h6-mobile !important;
+    }
+  }
+
+  .contact-p {
+    font-size: $font-size-h6-mobile !important;
+  }
+
+  .container-skills {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

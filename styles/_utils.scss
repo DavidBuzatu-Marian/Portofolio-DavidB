@@ -30,6 +30,10 @@
   margin-top: $margin-72 !important;
 }
 
+.mt-negative-dots {
+  margin-top: -6rem !important;
+}
+
 .mt-32 {
   margin-top: $margin-32 !important;
 }
@@ -203,6 +207,7 @@
       background-color: $secondary-color;
       height: 1.75rem;
       width: 1.75rem;
+      cursor: default;
     }
   }
 

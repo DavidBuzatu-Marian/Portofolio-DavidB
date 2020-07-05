@@ -9,14 +9,13 @@ const ScrollLink = Scroll.Link;
 const Presentation = () => {
   return (
     <Fragment>
-      <img
-        src={PortraitIMG}
-        alt='portrait'
-        className='portrait-img pos-absolute'
-      />
       <div className='container mx-auto'>
-        <img src={DotsPNG} alt='dots' className='mt-144 pos-absolute' />
         <div className='container-title'>
+          <img
+            src={DotsPNG}
+            alt='dots'
+            className='mt-negative-dots pos-absolute'
+          />
           <h1 className='light'>Hello, I'm David</h1>
           <h1 className='extra-bold'>I craft ideas into real software</h1>
           <div className='contact-btn-container mt-144'>
@@ -35,6 +34,11 @@ const Presentation = () => {
           </div>
           <ExternalLinks />
         </div>
+        <img
+          src={PortraitIMG}
+          alt='portrait'
+          className='portrait-img pos-absolute pos-relative-mobile'
+        />
       </div>
     </Fragment>
   );
