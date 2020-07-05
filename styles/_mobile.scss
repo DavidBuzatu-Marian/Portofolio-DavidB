@@ -1,0 +1,93 @@
+@import '../styles/margins';
+@import '../styles/font-size';
+
+@media (max-width: 1572px) {
+  .mx-auto-mobile {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container {
+    width: 100%;
+
+    .row {
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+
+      .col {
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        width: 60%;
+        margin-right: 0;
+        margin-bottom: $margin-32;
+      }
+    }
+  }
+
+  .container-languages {
+    width: 64%;
+  }
+
+  .text-center-mobile {
+    text-align: center !important;
+  }
+
+  .align-items-center-mobile {
+    align-items: center !important;
+  }
+
+  form {
+    align-items: center;
+  }
+
+  .container-title {
+    margin-left: $margin-32;
+  }
+
+  .hide-mobile {
+    display: none !important;
+  }
+
+  .portrait-img {
+    max-height: 40rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .container-projects {
+    grid-template-columns: 1fr;
+    align-items: center;
+
+    a {
+      text-align: center;
+    }
+  }
+
+  .ellipse-projects-img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .web-svg {
+    width: 22.5rem;
+    height: 14.25rem;
+  }
+
+  .mobile-svg {
+    width: 22.5rem;
+    height: 23rem;
+  }
+
+  .maintanance-svg {
+    width: 22.5rem;
+    height: 17.3125rem;
+  }
+
+  .deployment-svg {
+    width: 25.8125rem;
+    height: 18.75rem;
+  }
+}

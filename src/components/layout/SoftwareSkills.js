@@ -31,7 +31,7 @@ const SoftwareSkills = () => {
           <SkillButton key={idx} btnText={skill} />
         ))}
       </div>
-      <div className='mt-72'>
+      <div className='mt-72 mx-auto-mobile text-center-mobile'>
         <img
           src={Asteroid}
           alt='asteroid'
@@ -40,7 +40,7 @@ const SoftwareSkills = () => {
         <h2 className='bold header w-75'>
           Great knowledge of the following programming languages:
         </h2>
-        <div className='container-languages mt-32'>
+        <div className='container-languages mt-32 mx-auto-mobile'>
           {languageArr.map((language, idx) => (
             <LanguageItem key={idx} language={language} />
           ))}

@@ -48,7 +48,7 @@ const Contact = () => {
 
   return (
     <Element id='contact' name='contact'>
-      <div className='container margin-72-auto'>
+      <div className='container margin-72-auto align-items-center-mobile text-center-mobile'>
         <h1 className='regular'>Let's build a solution together</h1>
         <div className='row'>
           <div className='col'>

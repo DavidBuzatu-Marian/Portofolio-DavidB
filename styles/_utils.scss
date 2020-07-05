@@ -42,6 +42,10 @@
   margin-bottom: 3rem !important;
 }
 
+.mr-72 {
+  margin-right: $margin-72 !important;
+}
+
 .mr-32 {
   margin-right: $margin-32 !important;
 }
@@ -138,6 +142,12 @@
   padding: 1.5rem 0;
   z-index: 999;
 
+  &-img {
+    right: 0;
+    z-index: 9999;
+    display: none;
+  }
+
   li {
     margin-right: $margin-40;
     font-size: $font-size-h6;
@@ -182,6 +192,11 @@
     border-radius: 10rem;
     height: 6rem;
     width: 6rem;
+    transition: 0.3s;
+
+    &:hover {
+      opacity: 0.8;
+    }
 
     &-orange {
       border-radius: 10rem;
@@ -233,8 +248,9 @@
 }
 
 .container-projects {
-  margin: $margin-144 $margin-72 0 $margin-72;
+  margin: $margin-144 auto 0 auto;
   display: grid;
+  max-width: 120rem;
   grid-template-columns: 1fr 1fr;
   overflow: hidden;
 

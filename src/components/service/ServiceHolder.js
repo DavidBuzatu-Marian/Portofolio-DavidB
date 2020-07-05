@@ -7,10 +7,14 @@ import Dots from '../../img/dots-services.png';
 
 const ServiceHolder = ({ svg, title, subtitle, paragraphs }) => {
   const svgArr = [
-    <WebSVG width='480px' height='304px' />,
-    <MobileSVG width='480px' height='491.78px' />,
-    <MaintananceSVG width='480px' height='368.82px' />,
-    <DeploymentSVG width='675px' height='490px' />,
+    <WebSVG width='480px' height='304px' className='web-svg' />,
+    <MobileSVG width='480px' height='491.78px' className='mobile-svg' />,
+    <MaintananceSVG
+      width='480px'
+      height='368.82px'
+      className='maintanance-svg'
+    />,
+    <DeploymentSVG width='675px' height='490px' className='deployment-svg' />,
   ];
   const leftContent = (
     <div className='row'>
@@ -58,7 +62,7 @@ const ServiceHolder = ({ svg, title, subtitle, paragraphs }) => {
         <img
           src={Dots}
           alt='dots'
-          className='pos-absolute dots-services-left'
+          className='pos-absolute dots-services-left hide-mobile'
         />
       )}
       <div className='container margin-72-auto'>

@@ -13,7 +13,7 @@ const AboutBottom = () => {
     'Responsible',
   ];
   return (
-    <div className='mt-72'>
+    <div className='mt-72 mx-auto-mobile'>
       <h1>My skills</h1>
       <div className='container-skills'>
         {skillsArr.map((skill, idx) => (

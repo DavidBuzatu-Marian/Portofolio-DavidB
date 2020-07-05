@@ -1,5 +1,6 @@
 import React from 'react';
 import Scroll from 'react-scroll';
+import MenuPNG from '../../img/menu.png';
 
 const ScrollLink = Scroll.Link;
 
@@ -42,6 +43,7 @@ const Navbar = () => {
           </ScrollLink>
         </li>
       </ul>
+      <img src={MenuPNG} alt='menu' className='navbar-img pos-absolute mr-72' />
     </div>
   );
 };
