@@ -1,6 +1,10 @@
 @import '../styles/margins';
 @import '../styles/font-size';
 
+.w-skills {
+  width: 60rem !important;
+}
+
 .margin-0-auto {
   margin: 0 auto !important;
 }
@@ -34,8 +38,16 @@
   margin-left: $margin-144 !important;
 }
 
+.mb-48 {
+  margin-bottom: 3rem !important;
+}
+
 .mr-32 {
   margin-right: $margin-32 !important;
+}
+
+.ml-16 {
+  margin-left: $margin-16 !important;
 }
 
 .text-center {
@@ -170,6 +182,13 @@
     border-radius: 10rem;
     height: 6rem;
     width: 6rem;
+
+    &-orange {
+      border-radius: 10rem;
+      background-color: $secondary-color;
+      height: 1.75rem;
+      width: 1.75rem;
+    }
   }
 
   &.btn-round-right {
@@ -193,6 +212,18 @@
     width: 16rem;
     height: 5rem;
     cursor: default;
+  }
+
+  &.btn-round-green {
+    border-radius: 0.5rem;
+    background-color: $primary-color;
+    font-size: $font-size-h6;
+    font-weight: 700;
+    width: 16rem;
+    height: 6rem;
+    cursor: default;
+    box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.25),
+      0 10px 10px rgba(0, 0, 0, 0.22);
   }
 
   i {
@@ -245,4 +276,29 @@
 .container-skills {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.container-languages {
+  display: flex;
+  flex-wrap: nowrap;
+
+  .language {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.skills-img {
+  right: 0;
+  margin-right: $margin-144;
+  margin-top: -$margin-72;
+}
+
+.overflow-visible {
+  overflow: visible;
+}
+
+.w-75 {
+  width: 75% !important;
 }
