@@ -40,7 +40,16 @@ const Navbar = () => {
             Services
           </ScrollLink>
         </li>
-        <li>Resume</li>
+        <li>
+          <a
+            href='https://drive.google.com/file/d/116itiutYd8GWHnDri9FoyU6a-HKfIJ4-/view?usp=sharing'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            {' '}
+            Resume
+          </a>
+        </li>
         <li>
           <ScrollLink
             to='contact'
