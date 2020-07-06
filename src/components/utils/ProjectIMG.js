@@ -1,11 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
 const ProjectIMG = ({ image, projectURL }) => {
   return (
-    <Link to={{ pathname: projectURL }} target='_blank'>
+    <a href={projectURL} target='_blank' rel='noopener noreferrer'>
       <img src={image} alt='project' className='project-img' />
-    </Link>
+    </a>
   );
 };
 
