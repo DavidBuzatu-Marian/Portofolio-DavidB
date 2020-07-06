@@ -35,6 +35,7 @@ const ServiceHolder = ({ svg, title, subtitle, paragraphs }) => {
 
   const rightContent = (
     <div className='row'>
+      <div className='col hidden-img visible-img'>{svgArr[svg]}</div>
       <div className='col'>
         <h2 className='title'>{title}</h2>
         <h6 className='regular mt-32'>{subtitle}</h6>
@@ -46,7 +47,7 @@ const ServiceHolder = ({ svg, title, subtitle, paragraphs }) => {
           ))}
         </div>
       </div>
-      <div className='col'>{svgArr[svg]}</div>
+      <div className='col hidden-mobile'>{svgArr[svg]}</div>
     </div>
   );
 
