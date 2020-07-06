@@ -8,7 +8,7 @@ const AboutTop = () => {
   return (
     <div className='row'>
       <div className='col'>
-        <AboutSVG height='512px' width='615px' />
+        <AboutSVG height='512px' width='615px' className='about-svg' />
       </div>
       <div className='col'>
         <h1>About me</h1>

@@ -7,10 +7,14 @@ import Dots from '../../img/dots-services.png';
 
 const ServiceHolder = ({ svg, title, subtitle, paragraphs }) => {
   const svgArr = [
-    <WebSVG width='480px' height='304px' />,
-    <MobileSVG width='480px' height='491.78px' />,
-    <MaintananceSVG width='480px' height='368.82px' />,
-    <DeploymentSVG width='675px' height='490px' />,
+    <WebSVG width='480px' height='304px' className='web-svg' />,
+    <MobileSVG width='480px' height='491.78px' className='mobile-svg' />,
+    <MaintananceSVG
+      width='480px'
+      height='368.82px'
+      className='maintanance-svg'
+    />,
+    <DeploymentSVG width='675px' height='490px' className='deployment-svg' />,
   ];
   const leftContent = (
     <div className='row'>
@@ -31,6 +35,7 @@ const ServiceHolder = ({ svg, title, subtitle, paragraphs }) => {
 
   const rightContent = (
     <div className='row'>
+      <div className='col hidden-img visible-img'>{svgArr[svg]}</div>
       <div className='col'>
         <h2 className='title'>{title}</h2>
         <h6 className='regular mt-32'>{subtitle}</h6>
@@ -42,7 +47,7 @@ const ServiceHolder = ({ svg, title, subtitle, paragraphs }) => {
           ))}
         </div>
       </div>
-      <div className='col'>{svgArr[svg]}</div>
+      <div className='col hidden-mobile'>{svgArr[svg]}</div>
     </div>
   );
 
@@ -58,7 +63,7 @@ const ServiceHolder = ({ svg, title, subtitle, paragraphs }) => {
         <img
           src={Dots}
           alt='dots'
-          className='pos-absolute dots-services-left'
+          className='pos-absolute dots-services-left hidden-mobile'
         />
       )}
       <div className='container margin-72-auto'>
