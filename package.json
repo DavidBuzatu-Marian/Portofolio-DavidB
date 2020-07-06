@@ -1,7 +1,7 @@
 {
   "name": "david-portofolio",
   "version": "1.0.1",
-  "homepage": "http://davidbuzatu-marian.github.io/Portofolio-DavidB",
+  "homepage": "http://davidbuzatu-marian.github.io/Portofolio-DavidB/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
