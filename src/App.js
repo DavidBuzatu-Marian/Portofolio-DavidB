@@ -5,7 +5,7 @@ import Landing from './components/layout/Landing';
 import Navbar from './components/navbar/Navbar';
 const App = () => {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <Fragment>
         <Navbar />
         <Route exact path='/' component={Landing} />

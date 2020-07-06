@@ -1,22 +1,22 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
 const ExternalLinks = () => {
   return (
     <div className='external-contact'>
-      <Link
-        to={{ pathname: 'https://github.com/DavidBuzatu-Marian' }}
+      <a
+        href='https://github.com/DavidBuzatu-Marian'
         target='_blank'
+        rel='noopener noreferrer'
       >
         <i className='fab fa-github'></i>
-      </Link>
-      <Link
-        to={{
-          pathname: 'https://www.linkedin.com/in/david-buzatu-160620198/',
-        }}
+      </a>
+      <a
+        href='https://www.linkedin.com/in/david-buzatu-160620198/'
         target='_blank'
+        rel='noopener noreferrer'
       >
         <i className='fab fa-linkedin-in'></i>
-      </Link>
+      </a>
     </div>
   );
 };
