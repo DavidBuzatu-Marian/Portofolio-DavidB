@@ -62,7 +62,7 @@ const ServiceHolder = ({ svg, title, subtitle, paragraphs }) => {
         <img
           src={Dots}
           alt='dots'
-          className='pos-absolute dots-services-left hide-mobile'
+          className='pos-absolute dots-services-left hidden-mobile'
         />
       )}
       <div className='container margin-72-auto'>

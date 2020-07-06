@@ -102,7 +102,7 @@ const Contact = () => {
             <ContactSVG
               height='512px'
               width='637.19'
-              className='contact-svg hide-mobile'
+              className='contact-svg hidden-mobile'
             />
           </div>
         </div>

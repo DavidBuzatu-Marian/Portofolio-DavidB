@@ -94,6 +94,21 @@
   margin-top: 16rem;
 }
 
+.container-presentation-img {
+  visibility: hidden;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+
+  .box {
+    width: 100%;
+    height: 6rem;
+    position: absolute;
+    align-self: flex-end;
+    background-color: $primary-color-light;
+  }
+}
+
 .ellipse-projects-img {
   left: 0;
   margin-left: $margin-72;
@@ -300,8 +315,9 @@
 }
 
 .container-languages {
-  display: flex;
-  flex-wrap: nowrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
 
   .language {
     display: flex;

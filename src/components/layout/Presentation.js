@@ -37,8 +37,16 @@ const Presentation = () => {
         <img
           src={PortraitIMG}
           alt='portrait'
-          className='portrait-img pos-absolute pos-relative-mobile'
+          className='portrait-img pos-absolute hidden-mobile-xs'
         />
+        <div className='container-presentation-img visible-mobile'>
+          <div className='box'></div>
+          <img
+            src={PortraitIMG}
+            alt='portrait'
+            className='portrait-img pos-absolute'
+          />
+        </div>
       </div>
     </Fragment>
   );
