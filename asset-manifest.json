@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portofolio-DavidB/static/css/main.efb389c4.chunk.css",
+    "main.css": "/Portofolio-DavidB/static/css/main.af7aff55.chunk.css",
     "main.js": "/Portofolio-DavidB/static/js/main.bad64865.chunk.js",
     "main.js.map": "/Portofolio-DavidB/static/js/main.bad64865.chunk.js.map",
     "runtime-main.js": "/Portofolio-DavidB/static/js/runtime-main.98293f79.js",
@@ -8,9 +8,9 @@
     "static/js/2.392cc6b6.chunk.js": "/Portofolio-DavidB/static/js/2.392cc6b6.chunk.js",
     "static/js/2.392cc6b6.chunk.js.map": "/Portofolio-DavidB/static/js/2.392cc6b6.chunk.js.map",
     "index.html": "/Portofolio-DavidB/index.html",
-    "precache-manifest.8ec69f4ca434fa38442669202acc60ce.js": "/Portofolio-DavidB/precache-manifest.8ec69f4ca434fa38442669202acc60ce.js",
+    "precache-manifest.157a9147a82ee27cd6a8bece2ec3707d.js": "/Portofolio-DavidB/precache-manifest.157a9147a82ee27cd6a8bece2ec3707d.js",
     "service-worker.js": "/Portofolio-DavidB/service-worker.js",
-    "static/css/main.efb389c4.chunk.css.map": "/Portofolio-DavidB/static/css/main.efb389c4.chunk.css.map",
+    "static/css/main.af7aff55.chunk.css.map": "/Portofolio-DavidB/static/css/main.af7aff55.chunk.css.map",
     "static/js/2.392cc6b6.chunk.js.LICENSE.txt": "/Portofolio-DavidB/static/js/2.392cc6b6.chunk.js.LICENSE.txt",
     "static/media/about.c54706b0.svg": "/Portofolio-DavidB/static/media/about.c54706b0.svg",
     "static/media/asteroid.png": "/Portofolio-DavidB/static/media/asteroid.91df3dd6.png",
@@ -28,7 +28,7 @@
   "entrypoints": [
     "static/js/runtime-main.98293f79.js",
     "static/js/2.392cc6b6.chunk.js",
-    "static/css/main.efb389c4.chunk.css",
+    "static/css/main.af7aff55.chunk.css",
     "static/js/main.bad64865.chunk.js"
   ]
 }
