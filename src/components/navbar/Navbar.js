@@ -1,13 +1,21 @@
 import React from 'react';
 import Scroll from 'react-scroll';
-import MenuPNG from '../../img/menu.png';
 
 const ScrollLink = Scroll.Link;
 
+const onClick = (e) => {
+  const navbar = document.getElementsByClassName('navbar')[0];
+  if (navbar.classList.contains('left-0')) {
+    navbar.classList.remove('left-0');
+  } else {
+    navbar.classList.add('left-0');
+  }
+};
+
 const Navbar = () => {
   return (
-    <div className='navbar'>
-      <ul className='navbar ml-144'>
+    <nav>
+      <ul className='navbar pl-144'>
         <li>
           <ScrollLink
             to='portofolio'
@@ -15,6 +23,7 @@ const Navbar = () => {
             smooth={true}
             duration={500}
             activeClass='active'
+            onClick={(e) => onClick(e)}
           >
             Portofolio
           </ScrollLink>
@@ -26,6 +35,7 @@ const Navbar = () => {
             smooth={true}
             duration={500}
             activeClass='active'
+            onClick={(e) => onClick(e)}
           >
             Services
           </ScrollLink>
@@ -38,13 +48,14 @@ const Navbar = () => {
             smooth={true}
             duration={500}
             activeClass='active'
+            onClick={(e) => onClick(e)}
           >
             Contact
           </ScrollLink>
         </li>
       </ul>
-      <img src={MenuPNG} alt='menu' className='navbar-img pos-absolute mr-72' />
-    </div>
+      <button className='navbar-open' onClick={(e) => onClick(e)}></button>
+    </nav>
   );
 };
 
