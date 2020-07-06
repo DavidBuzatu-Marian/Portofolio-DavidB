@@ -1,0 +1,141 @@
+@import '../styles/colors';
+@import '../styles/utils';
+@import '../styles/margins';
+@import '../styles/font-size';
+@import '../styles/form';
+@import '../styles/mobile';
+
+/* reset defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: auto;
+  overflow-x: hidden;
+}
+html,
+body {
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  //background-image: linear-gradient(135deg, $primary-color, #f9f9f9 60%);
+  background-color: $background-color;
+  // background-color: #f9f9f9;
+  color: #333;
+}
+button {
+  outline: none !important;
+}
+
+input {
+  outline: none !important;
+  border: none !important;
+  background: none;
+  font-size: $font-size-h6;
+  color: $primary-color-light;
+  border-bottom: 2px solid $primary-color-light !important;
+
+  &:focus {
+    border-bottom: 2px solid $primary-color !important;
+  }
+}
+
+textarea {
+  outline: none !important;
+  background: none;
+  font-size: $font-size-h6;
+  color: $primary-color-light;
+  border: 2px solid $primary-color-light !important;
+  padding: 1rem;
+  resize: vertical;
+
+  &:focus {
+    border: 2px solid $primary-color !important;
+  }
+  &:active {
+    border: 1px solid $primary-color !important;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: $font-size-h1;
+  font-weight: 700;
+  color: $header-color;
+
+  &.regular {
+    font-weight: normal;
+  }
+
+  &.light {
+    font-weight: 300;
+  }
+
+  &.extra-bold {
+    font-weight: 800;
+    font-size: $font-size-title;
+    color: $color-black;
+  }
+}
+
+// Headings
+h2 {
+  font-size: $font-size-h2;
+  color: $color-black;
+
+  &.title {
+    font-size: $font-size-title;
+  }
+
+  &.bold {
+    font-weight: 700;
+  }
+
+  &.header {
+    color: $header-color;
+  }
+
+  &.subtitle {
+    font-weight: 400;
+  }
+}
+h3 {
+  font-size: $font-size-h3;
+  color: $color-black;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: $font-size-h6;
+  color: $color-black;
+  font-weight: 100;
+
+  &.bold {
+    font-weight: bold;
+  }
+
+  &.regular {
+    font-weight: 400;
+  }
+}
+
+p {
+  font-size: $font-size-paragraph;
+  color: $color-black;
+  font-weight: 300;
+
+  &.thin {
+    font-weight: 100;
+    font-size: $font-size-h6;
+  }
+}
