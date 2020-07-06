@@ -191,6 +191,11 @@ nav {
     overflow: hidden;
     cursor: pointer;
     height: 100%;
+
+    a {
+      color: inherit !important;
+      text-decoration: none;
+    }
     &:hover {
       color: $primary-color-light;
     }
