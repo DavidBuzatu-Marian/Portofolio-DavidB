@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/Portofolio-DavidB/static/css/main.efb389c4.chunk.css",
+    "main.js": "/Portofolio-DavidB/static/js/main.7ca12bec.chunk.js",
+    "main.js.map": "/Portofolio-DavidB/static/js/main.7ca12bec.chunk.js.map",
+    "runtime-main.js": "/Portofolio-DavidB/static/js/runtime-main.98293f79.js",
+    "runtime-main.js.map": "/Portofolio-DavidB/static/js/runtime-main.98293f79.js.map",
+    "static/js/2.e39e09c5.chunk.js": "/Portofolio-DavidB/static/js/2.e39e09c5.chunk.js",
+    "static/js/2.e39e09c5.chunk.js.map": "/Portofolio-DavidB/static/js/2.e39e09c5.chunk.js.map",
+    "index.html": "/Portofolio-DavidB/index.html",
+    "precache-manifest.3fe026ae1ae53603e0c54c643fd4dbd9.js": "/Portofolio-DavidB/precache-manifest.3fe026ae1ae53603e0c54c643fd4dbd9.js",
+    "service-worker.js": "/Portofolio-DavidB/service-worker.js",
+    "static/css/main.efb389c4.chunk.css.map": "/Portofolio-DavidB/static/css/main.efb389c4.chunk.css.map",
+    "static/js/2.e39e09c5.chunk.js.LICENSE.txt": "/Portofolio-DavidB/static/js/2.e39e09c5.chunk.js.LICENSE.txt",
+    "static/media/about.c54706b0.svg": "/Portofolio-DavidB/static/media/about.c54706b0.svg",
+    "static/media/asteroid.png": "/Portofolio-DavidB/static/media/asteroid.91df3dd6.png",
+    "static/media/contact.983ef307.svg": "/Portofolio-DavidB/static/media/contact.983ef307.svg",
+    "static/media/deployment-illustration.658ac2d5.svg": "/Portofolio-DavidB/static/media/deployment-illustration.658ac2d5.svg",
+    "static/media/dots-services.png": "/Portofolio-DavidB/static/media/dots-services.0f0d206d.png",
+    "static/media/maintanance-illustration.a1f5e311.svg": "/Portofolio-DavidB/static/media/maintanance-illustration.a1f5e311.svg",
+    "static/media/mobile-illustration.87e3c4e5.svg": "/Portofolio-DavidB/static/media/mobile-illustration.87e3c4e5.svg",
+    "static/media/portrait.png": "/Portofolio-DavidB/static/media/portrait.eedc5847.png",
+    "static/media/project-1.png": "/Portofolio-DavidB/static/media/project-1.119fae73.png",
+    "static/media/project-2.png": "/Portofolio-DavidB/static/media/project-2.2f84367c.png",
+    "static/media/project-3.png": "/Portofolio-DavidB/static/media/project-3.3651ddf5.png",
+    "static/media/web-illustration.1c0df33d.svg": "/Portofolio-DavidB/static/media/web-illustration.1c0df33d.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.98293f79.js",
+    "static/js/2.e39e09c5.chunk.js",
+    "static/css/main.efb389c4.chunk.css",
+    "static/js/main.7ca12bec.chunk.js"
+  ]
+}
