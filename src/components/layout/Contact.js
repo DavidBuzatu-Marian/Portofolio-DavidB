@@ -95,7 +95,7 @@ const Contact = () => {
               <PulseLoader color={'#7bacac'} loading={loading} />
             </div>
             <h6>Phone number (Romanian code)</h6>
-            <h6 className='bold'>+04 726 654 132</h6>
+            <h6 className='bold'>+4 (0726) 654 132</h6>
             <ExternalLinks />
           </div>
           <div className='col'>
