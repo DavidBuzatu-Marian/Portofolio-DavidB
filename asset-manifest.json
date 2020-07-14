@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Portofolio-DavidB/static/css/main.71ee4b64.chunk.css",
-    "main.js": "/Portofolio-DavidB/static/js/main.d7001acc.chunk.js",
-    "main.js.map": "/Portofolio-DavidB/static/js/main.d7001acc.chunk.js.map",
+    "main.css": "/Portofolio-DavidB/static/css/main.d18c4d10.chunk.css",
+    "main.js": "/Portofolio-DavidB/static/js/main.844324ac.chunk.js",
+    "main.js.map": "/Portofolio-DavidB/static/js/main.844324ac.chunk.js.map",
     "runtime-main.js": "/Portofolio-DavidB/static/js/runtime-main.98293f79.js",
     "runtime-main.js.map": "/Portofolio-DavidB/static/js/runtime-main.98293f79.js.map",
     "static/js/2.2652d349.chunk.js": "/Portofolio-DavidB/static/js/2.2652d349.chunk.js",
     "static/js/2.2652d349.chunk.js.map": "/Portofolio-DavidB/static/js/2.2652d349.chunk.js.map",
     "index.html": "/Portofolio-DavidB/index.html",
-    "precache-manifest.2d97abaa7ff254b0a145adcb39556aa0.js": "/Portofolio-DavidB/precache-manifest.2d97abaa7ff254b0a145adcb39556aa0.js",
+    "precache-manifest.2ebcdcc98cc480ef1710f430c89c8429.js": "/Portofolio-DavidB/precache-manifest.2ebcdcc98cc480ef1710f430c89c8429.js",
     "service-worker.js": "/Portofolio-DavidB/service-worker.js",
-    "static/css/main.71ee4b64.chunk.css.map": "/Portofolio-DavidB/static/css/main.71ee4b64.chunk.css.map",
+    "static/css/main.d18c4d10.chunk.css.map": "/Portofolio-DavidB/static/css/main.d18c4d10.chunk.css.map",
     "static/js/2.2652d349.chunk.js.LICENSE.txt": "/Portofolio-DavidB/static/js/2.2652d349.chunk.js.LICENSE.txt",
     "static/media/about.c54706b0.svg": "/Portofolio-DavidB/static/media/about.c54706b0.svg",
     "static/media/asteroid.png": "/Portofolio-DavidB/static/media/asteroid.91df3dd6.png",
@@ -28,7 +28,7 @@
   "entrypoints": [
     "static/js/runtime-main.98293f79.js",
     "static/js/2.2652d349.chunk.js",
-    "static/css/main.71ee4b64.chunk.css",
-    "static/js/main.d7001acc.chunk.js"
+    "static/css/main.d18c4d10.chunk.css",
+    "static/js/main.844324ac.chunk.js"
   ]
 }
