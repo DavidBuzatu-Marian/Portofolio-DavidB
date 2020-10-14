@@ -4,15 +4,17 @@ import GroupEllipse from '../../img/GroupEllipse.png';
 import Project1 from '../../img/project-1.png';
 import Project2 from '../../img/project-2.png';
 import Project3 from '../../img/project-3.png';
+import Project4 from '../../img/project-4.png';
 import ProjectIMG from '../utils/ProjectIMG';
 import { Element } from 'react-scroll';
 
 const Projects = () => {
-  const projectsIMG = [Project1, Project2, Project3];
+  const projectsIMG = [Project1, Project2, Project3, Project4];
   const projectsURL = [
     'https://github.com/DavidBuzatu-Marian/Schedly',
     'https://github.com/DavidBuzatu-Marian/BenchMe',
     'https://github.com/DavidBuzatu-Marian/Bookster',
+    'https://github.com/DavidBuzatu-Marian/EasyAlgo',
   ];
 
   return (
